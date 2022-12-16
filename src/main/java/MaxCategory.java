@@ -13,7 +13,6 @@ public class MaxCategory {
     protected Map<String, String> categories = new HashMap<>();
 
     public MaxCategory(File tsvFile) throws IOException {
-
         try (BufferedReader reader = new BufferedReader
                 (new FileReader(tsvFile))) {
             while (reader.ready()) {

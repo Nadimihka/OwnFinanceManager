@@ -7,9 +7,7 @@ public class Main {
     private static final int PORT = 8989;
 
     public static void main(String[] args) throws Exception {
-
         MaxCategory maxCategory = new MaxCategory(new File("categories.tsv"));
-
         try (ServerSocket serverSocket = new ServerSocket(PORT);) {
             System.out.println("Сервер ожидает запрос");
             while (true) {
